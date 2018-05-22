@@ -1,10 +1,7 @@
 
-function showButtonTxt() {
-    var buttons = document.getElementsByClassName('button').length;
+    var buttons = document.getElementsByClassName('button');
 
-    for (var i = 0; i < buttons; i++) {
-        alert(document.getElementsByClassName('button').textContent);
+    for (var i = 0; i < buttons.length; i++) {
+        var bttnz = buttons[i].innerText;
+        alert(bttnz);
     }
-}
-
-var delayedShow = setTimeout(showButtonTxt, 1000);
